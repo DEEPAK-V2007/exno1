@@ -143,5 +143,9 @@ files.download("Final_cleaned_data.csv")
 
 ![alt text](image-4.png)
 
+# Summary
+
+I learned to read datasets using `pd.read_csv()` and check dataset information using `df.info()`. I used `df.isnull().sum()` to identify missing values and `df.dropna()` to remove them. I also used `df.drop_duplicates()` to remove duplicate records and `df.to_csv()` to save the cleaned data. I learned to detect outliers using the IQR method with `quantile()` and calculate Z-scores using `stats.zscore()`. Finally, I used filtering conditions to remove outliers and display the final cleaned dataset.
+
 # Result
 The given data has been successfully read, cleaned by handling duplicates and missing values, and saved to a new file.
