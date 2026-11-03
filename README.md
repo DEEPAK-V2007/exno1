@@ -153,7 +153,9 @@ The IQR (Interquartile Range) method was used to detect outliers by calculating 
 
 Finally, the cleaned datasets were saved using df.to_csv() and downloaded using Google Colab's files.download() function.
 
-![alt text](image-5.png)
+<p align="center">
+  <img src="image-5.png" width="500" alt="Functions Used Table">
+</p>
 
 Pandas: Data loading, cleaning, manipulation, and saving.
 SciPy: Statistical calculations and Z-score analysis.
