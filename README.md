@@ -152,24 +152,8 @@ Missing values were identified using df.isnull().sum() and removed using df.drop
 The IQR (Interquartile Range) method was used to detect outliers by calculating Q1, Q3, and IQR using quantile(). The Z-score method was also applied using stats.zscore() to identify values beyond the threshold of ±3. Outliers were removed using filtering conditions with df.loc[].
 
 Finally, the cleaned datasets were saved using df.to_csv() and downloaded using Google Colab's files.download() function.
-Functions Used
-Function / Method	Description
-pd.read_csv()	Reads CSV files into a DataFrame.
-df.shape	Returns the number of rows and columns.
-df.info()	Displays dataset information.
-df.isnull().sum()	Identifies missing values.
-df.duplicated().sum()	Counts duplicate rows.
-df.dropna()	Removes rows containing missing values.
-df.drop_duplicates()	Removes duplicate records.
-df.select_dtypes()	Selects numerical columns.
-quantile()	Calculates quartiles (Q1 and Q3).
-stats.zscore()	Calculates Z-scores for outlier detection.
-df.loc[]	Filters rows based on conditions.
-df.copy()	Creates a copy of the DataFrame.
-df.to_csv()	Saves the cleaned dataset to a CSV file.
-df.head()	Displays the first five rows.
-files.upload()	Uploads datasets to Google Colab.
-files.download()	Downloads the cleaned CSV file.
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/bd24d56e-d245-4567-806e-8f860c83da7a" />
 
 Libraries Used
 - Pandas: Data loading, cleaning, manipulation, and saving.
