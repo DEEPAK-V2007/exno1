@@ -145,7 +145,36 @@ files.download("Final_cleaned_data.csv")
 
 # Summary
 
-I learned to read datasets using `pd.read_csv()` and check dataset information using `df.info()`. I used `df.isnull().sum()` to identify missing values and `df.dropna()` to remove them. I also used `df.drop_duplicates()` to remove duplicate records and `df.to_csv()` to save the cleaned data. I learned to detect outliers using the IQR method with `quantile()` and calculate Z-scores using `stats.zscore()`. Finally, I used filtering conditions to remove outliers and display the final cleaned dataset.
+In this experiment, I learned how to perform data cleaning using Python, Pandas, and SciPy. The datasets were imported using pd.read_csv() and analyzed to identify missing values, duplicate records, and data inconsistencies.
+
+Missing values were identified using df.isnull().sum() and removed using df.dropna(). Duplicate records were detected using df.duplicated() and removed using df.drop_duplicates().
+
+The IQR (Interquartile Range) method was used to detect outliers by calculating Q1, Q3, and IQR using quantile(). The Z-score method was also applied using stats.zscore() to identify values beyond the threshold of ±3. Outliers were removed using filtering conditions with df.loc[].
+
+Finally, the cleaned datasets were saved using df.to_csv() and downloaded using Google Colab's files.download() function.
+Functions Used
+Function / Method	Description
+pd.read_csv()	Reads CSV files into a DataFrame.
+df.shape	Returns the number of rows and columns.
+df.info()	Displays dataset information.
+df.isnull().sum()	Identifies missing values.
+df.duplicated().sum()	Counts duplicate rows.
+df.dropna()	Removes rows containing missing values.
+df.drop_duplicates()	Removes duplicate records.
+df.select_dtypes()	Selects numerical columns.
+quantile()	Calculates quartiles (Q1 and Q3).
+stats.zscore()	Calculates Z-scores for outlier detection.
+df.loc[]	Filters rows based on conditions.
+df.copy()	Creates a copy of the DataFrame.
+df.to_csv()	Saves the cleaned dataset to a CSV file.
+df.head()	Displays the first five rows.
+files.upload()	Uploads datasets to Google Colab.
+files.download()	Downloads the cleaned CSV file.
+
+Libraries Used
+- Pandas: Data loading, cleaning, manipulation, and saving.
+- SciPy: Statistical calculations and Z-score analysis.
+- Google Colab Files: Uploading and downloading datasets.
 
 # Result
 The given data has been successfully read, cleaned by handling duplicates and missing values, and saved to a new file.
